@@ -31,7 +31,7 @@ disabled = false
 [directory]
 style = "fg:#6e738d"
 format = "[$path]($style) [┄](fg:#494d64) "
-truncation_length = 3
+truncation_length = 5
 truncation_symbol = "…/"
 
 [directory.substitutions]
@@ -39,6 +39,7 @@ truncation_symbol = "…/"
 "Downloads" = ""
 "Music" = ""
 "Pictures" = ""
+".config" = ""
 
 [character]
 success_symbol = "[─](fg:#494d64)"
