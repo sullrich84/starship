@@ -1,0 +1,58 @@
+format = """
+$username\
+$directory\
+$git_branch\
+$git_status\
+$docker_context\
+$time $fill \
+$line_break\
+$character\
+"""
+
+[username]
+show_always = true
+style_user = "italic fg:#ffd700"
+style_root = "underline fg:#494d64"
+format = "[╭─](fg:#494d64) [$user]($style) [┄](fg:#494d64) "
+disabled = false
+
+[directory]
+style = "fg:#6e738d"
+format = "[$path]($style) [┄](fg:#494d64) "
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = " "
+"Downloads" = ""
+"Music" = ""
+"Pictures" = ""
+
+[character]
+success_symbol = "[─](fg:#494d64)"
+error_symbol = "[─](fg:#494d64) [✕](fg:#FF0000)"
+format = "[╰](fg:#494d64)[$symbol]($style) "
+
+[docker_context]
+symbol = " "
+style = "fg:#6e738d"
+format = "[$symbol $context]($style) $path [┄](fg:#494d64) "
+
+[git_branch]
+symbol = ""
+style = "fg:#6e738d"
+format = "[$symbol $branch]($style) [┄](fg:#494d64) "
+
+[git_status]
+style = "fg:#6e738d"
+format = "[$all_status$ahead_behind]($style) [┄](fg:#494d64) "
+
+[time]
+disabled = false
+time_format = "%T"
+style = "fg:#6e738d"
+format = "[$time]($style)"
+
+[fill]
+symbol = "┄"
+style = "fg:#494d64"
