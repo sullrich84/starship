@@ -54,7 +54,7 @@ format = "[$symbol $context]($style) $path [┄](fg:#494d64) "
 [git_branch]
 symbol = ""
 style = "fg:#6e738d"
-format = "[$symbol $branch]($style) [┄](fg:#494d64) "
+format = "[$symbol $branch]($style) "
 
 [git_status]
 style = "fg:#6e738d"
